@@ -24,6 +24,7 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
+        clearData();
         loadData();
         if(remmeberMe){
             Intent intent = new Intent(LoginActivity.this, TransactionsActivity.class);
@@ -65,6 +66,11 @@ public class LoginActivity extends AppCompatActivity {
         username = sharedPreferences.getString("username","");
         password = sharedPreferences.getString("password","");
         remmeberMe = sharedPreferences.getBoolean("remmeberMe",false);
+    }
+
+    public void clearData(){
+        SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFS,MODE_PRIVATE);
+        sharedPreferences.edit().clear().commit();
     }
 
 }
