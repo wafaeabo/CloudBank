@@ -55,7 +55,7 @@ public class TransactionsActivity extends AppCompatActivity {
         });
 
         transactionViewModel = new ViewModelProvider(this).get(TransactionViewModel.class);
-        transactionViewModel.fetchAllFromSQLite().observe(this, new Observer<List<Transaction>>() {
+        transactionViewModel.fetchAll().observe(this, new Observer<List<Transaction>>() {
             @Override
             public void onChanged(List<Transaction> transactions) {
                 TransactionListAdapter adapter = new TransactionListAdapter(getApplicationContext(), R.layout.transaction_card, transactions);

@@ -22,8 +22,8 @@
 
             <ImageView
                 android:id="@+id/transaction_icon"
-                android:layout_width="68dp"
-                android:layout_height="54dp"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp" />
 
@@ -34,7 +34,7 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="10dp"
                 android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <LinearLayout
@@ -61,7 +61,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
-                    android:layout_marginEnd="10dp"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     android:textStyle="bold" />

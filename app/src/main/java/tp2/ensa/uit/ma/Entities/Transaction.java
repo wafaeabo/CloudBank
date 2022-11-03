@@ -35,6 +35,16 @@ public class Transaction implements Serializable {
         this.description = description;
     }
 
+    public Transaction(int id, String type, double price, Date date, int imageId, String reference, String description) {
+        this.id = id;
+        this.type = type;
+        this.price = price;
+        this.date = date;
+        this.imageId = imageId;
+        this.reference = reference;
+        this.description = description;
+    }
+
     public void setId(int id) {
         this.id = id;
     }

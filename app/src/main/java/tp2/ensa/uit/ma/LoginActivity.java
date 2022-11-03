@@ -17,7 +17,7 @@ public class LoginActivity extends AppCompatActivity {
     public static final String SHARED_PREFS = "sharedPrefs";
     private String username;
     private String password;
-    private boolean remmeberMe ;
+    private boolean remmeberMe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
